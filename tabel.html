@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script src="tabel.js"></script>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="header" style = "display:none">
+            <button class="btn btn-primary" type="submit" onclick="getSingOutValue();">Log out</button>
+	        <h1 id="kasutajanimi"></h1>
+        </div>
+        <div id="time" style = "display:none">
+	        <h1 id="sessiontime"></h1>
+        </div>
+        <div id="login">
+                Kasutajanimi:
+                <br>
+                <input type="text" id="userName" required>
+                <br>
+                Salasona:<br>
+                <input type="password" id="passWord" required>
+                <br>
+                <button class="btn btn-primary" type="submit" onclick="getSingInValue();">Signin</button>
+        </div>
+        <div id="input" style = "display:none">
+                Sisesta lahtritesse kolm programmeerimiskeelt:
+                <br>
+                <input type="text" id="progemisKeel1">
+                <br>
+                <input type="text" id="progemisKeel2">
+                <br>
+                <input type="text" id="progemisKeel3">
+                <br>
+                <button class="btn btn-primary" type="submit" onclick="getFormValue();">Save</button>
+        </div>
+        <div id="table" style = "display:none">
+            <table>
+			        <tr>
+			            <th>Programmeerimiskeeled:</th><!--table heading-->
+			        </tr>
+			        <tr>
+			            <td id="input1"></td><!--table cell-->
+			        </tr><!--table row-->
+			        <tr>
+			            <td id="input2"></td>
+			        </tr>
+                    <tr>
+			            <td id="input3"></td>
+			        </tr>
+		    </table>
+        </div>
+    </body>
+</html>

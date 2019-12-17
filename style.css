@@ -1,0 +1,17 @@
+body,html {
+    color: white;
+    background-image: url('https://i.imgur.com/xhiRfL6.jpg');
+    height: 100%;
+}
+#header {
+    color: white;
+}
+#input {
+    color: white;
+}
+#login {
+    color: white;
+}
+#table {
+    color: white;
+}
