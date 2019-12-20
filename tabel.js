@@ -1,13 +1,11 @@
 var signInTime = 0;
 var signOutTime = 0;
-var signInHours = 0;
-var signInMinutes = 0;
-var signInSeconds = 0;
+var timer = 0;
+/*sign in fuktsiooni sisse uus funktsioon ,mis muudab timerit iga sekundi tagant [he v\rra suuremaks. Nested funktsioon, kutsud funktsiooni getsign invalue sees valja. Signout all tuleb Alertiga taimer valja logida*/
+
+/*Kasutaja nimi salvestada tekstfaili*/
 function getSingInValue() {
     var signInTime = new Date();
-    var signInHours = signInTime.getHours();
-    var signInMinutes = signInTime.getMinutes();
-    var signInSeconds = signInTime.getSeconds();
      document.getElementById("login").style.display = "none";
      document.getElementById("input").style.display = "block";
      document.getElementById("header").style.display = "block";
@@ -19,7 +17,6 @@ function getSingInValue() {
      document.getElementById("kasutajanimi").innerHTML = "Tere, " + userName.charAt(0).toUpperCase() + userName.slice(1) +"!";
      console.log(signInTime);
 }
-
 
 function getFormValue() {  
      var progemisKeel1 = document.getElementById("progemisKeel1").value;
@@ -38,15 +35,7 @@ function getSingOutValue() {
     document.getElementById("header").style.display = "none";
     document.getElementById("input").style.display = "none";
     document.getElementById("login").style.display = "block";
-    var signOutHours = signOutTime.getHours();
-    var signOutMinutes = signOutTime.getMinutes();
-    var signOutSeconds = signOutTime.getSeconds();
-    var sessionTimeHours = signOutHours - signInHours;
-    var sessionTimeMinutes = signOutMinutes - signInMinutes;
-    var sessionTimeSeconds = signOutSeconds - signInSeconds;
-    console.log(signOutHours + ":" + signOutMinutes + ":" + signOutSeconds);
-    console.log(signInHours + ":" + signInMinutes + ":" + signInSeconds);
-    console.log(sessionTimeHours + ":" + sessionTimeMinutes + ":" + sessionTimeSeconds);
+    
         /*alert("Sessiooni pikkus "+sessionTimeHours + ":" + sessionTimeMinutes + ":" + sessionTimeSeconds);*/
 
 }

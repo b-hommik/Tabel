@@ -6,10 +6,12 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
         <script src="tabel.js"></script>
+        <script src="pindala.js"></script>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+        <div id="container">
         <div id="header" style = "display:none">
             <button class="btn btn-primary" type="submit" onclick="getSingOutValue();">Log out</button>
 	        <h1 id="kasutajanimi"></h1>
@@ -24,7 +26,7 @@
                 <br>
                 Salasona:<br>
                 <input type="password" id="passWord" required>
-                <br>
+                <br></br>
                 <button class="btn btn-primary" type="submit" onclick="getSingInValue();">Signin</button>
         </div>
         <div id="input" style = "display:none">
@@ -35,7 +37,7 @@
                 <input type="text" id="progemisKeel2">
                 <br>
                 <input type="text" id="progemisKeel3">
-                <br>
+                <br></br>
                 <button class="btn btn-primary" type="submit" onclick="getFormValue();">Save</button>
         </div>
         <div id="table" style = "display:none">
@@ -54,5 +56,6 @@
 			        </tr>
 		    </table>
         </div>
+    </div>
     </body>
 </html>
